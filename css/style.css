@@ -1,0 +1,179 @@
+:root {
+    --clr-primary: #1F2937;
+    --clr-secondary: #E5E7EB;
+    --clr-accent: #3882F6;
+    --clr-logo:#F9FAF8;
+    --clr-white: #FFF;
+
+    --ff-sans-serif: 'Inter', sans-serif;
+
+    --fs-main:3em;
+    --fs-heading:2.25em;
+    --fs-logo:1.5em;
+    --fs-secondary:1.125em;
+
+    --fw-extra-bold:800;
+    --fw-bold:700;
+    --fw-light:300;
+}
+
+/* General layout and components */ 
+
+*, *::before, *::after {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--clr-primary);
+    color: var(--clr-logo);
+    font-family: var(--ff-sans-serif);
+}
+
+nav {
+    padding: 0.5em 8em;
+}
+
+footer {
+    padding: 2em 8em;
+    text-align: center;
+}
+
+section {
+    padding: 5em 8em;
+}
+
+
+h1 {
+    font-size: var(--fs-main);
+    font-weight: var(--fw-extra-bold);
+}
+
+h2 {
+    font-size: var(--fs-heading);
+    font-weight: var(--fw-extra-bold);
+}
+
+a {
+    text-decoration:none;
+    color:var(--clr-secondary);
+    font-size: var(--fs-secondary);
+}
+
+li {
+    list-style-type: none;
+}
+
+button {
+    display:inline-block; 
+    background-color: var(--clr-accent);
+    color:var(--clr-white);
+    font-size: var(--fs-secondary);
+    font-weight: var(--fw-bold);
+    text-align:center;
+    text-decoration:none;
+    padding: 0.5em 2.5em !important;
+    border-radius: 0.5em;
+    cursor:pointer;
+}
+
+/* Navigation bar */
+
+nav .container {
+    display:flex;
+    justify-content:space-between;
+    padding-top:1em;
+}
+
+
+.logo {
+    font-size: var(--fs-logo);
+    font-weight:var(--fw-bold);
+}
+
+.nav-links {
+    display:flex;
+    gap:2em;
+    font-size: var(--fs-secondary);
+}
+
+/* Hero section */
+
+.hero-section .container {
+    display:flex;
+    justify-content:space-between;
+}
+
+.hero-left p {
+    font-size: var(--fs-secondary);
+    padding: 1.5em 0 2em 0;
+}
+
+.primary-cta-btn {
+    border:none;
+}
+
+.hero-right img {
+    width: 600px;
+    height:auto;
+    padding-left:2em;
+}
+
+/* Content sections */
+
+.information-section,
+.cta-section {
+    background-color: var(--clr-white);
+    color: var(--clr-primary);
+}
+
+.information-section {
+    text-align: center;
+    padding-top: 3em
+}
+
+.information-section .container {
+    display:flex;
+    justify-content:space-around;
+    padding-top: 3em
+}
+
+.information-card {
+    width: 200px;
+}
+
+.information-card img {
+    width: 100px;
+    height:auto;
+}
+
+.quote-section {
+    background-color: var(--clr-secondary);
+    color: var(--clr-primary);
+}
+
+.quote-section .quote-text {
+    font-size: var(--fs-heading);
+    font-weight: var(--fw-light);
+    font-style: italic;
+}
+
+.quote-section .quote-author {
+    font-size: var(--fs-secondary);
+    font-weight: var(--fw-bold);
+    text-align: right;
+}
+
+.cta-section .container {
+    background-color: var(--clr-accent);
+    color: var(--clr-white);
+    display:flex;
+    justify-content: space-around;
+    padding: 3em 2em;
+    border-radius: 0.5em;
+}
+
+
+
+
